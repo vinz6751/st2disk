@@ -1,0 +1,19 @@
+; Program to write a .ST file to the floppy
+; Vincent Barrilliot <vincent.barrilliot@laposte.net>
+; August 2010
+
+st2disk.app
+.S ;[ -Y ]
+.C ;[ -Y ]
+.L ;[ -Y ]
+=
+PCSTART.O
+
+st2disk.c
+
+;PCBGILIB.LIB       ; BGI library
+PCFLTLIB.LIB       ; floating point library
+PCSTDLIB.LIB       ; standard library
+PCEXTLIB.LIB       ; extended library
+PCTOSLIB.LIB       ; TOS library
+PCGEMLIB.LIB       ; AES and VDI library
